@@ -3,9 +3,6 @@ agent {
 docker {
 image 'alpine'
 }
-options{
-skipStagesAfterUnstable()
-}
 stages{
 stage('BuildStaging'){
 steps{
