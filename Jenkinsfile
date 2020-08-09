@@ -1,7 +1,7 @@
 pipeline {
-agent { docker {
+agent { 
+docker {
 image 'alpine'
-}
 }
 stages{
 stage('BuildStaging'){
