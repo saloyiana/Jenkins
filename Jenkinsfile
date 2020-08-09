@@ -1,6 +1,6 @@
 pipeline {
-agent { docker {
-image 'alpine'
+agent docker{
+ image 'alpine'
 }
 stages{
 stage('BuildStaging'){
@@ -18,7 +18,6 @@ stages{
 stage('ValidateStageDeployment'){
 steps{
 echo 'validate deployment on staging'
-}
 }
 }
 }
