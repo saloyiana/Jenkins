@@ -18,7 +18,7 @@ echo 'deploying application on staging env'
 stages{
 stage('ValidateStageDeployment'){
 steps{
-echo 'validate deployment on staginf '
+echo 'validate deployment on staging'
 }
 }
 }
