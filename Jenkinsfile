@@ -3,12 +3,14 @@ agent {
 docker {
 image 'alpine'
 }
+}
 stages{
 stage('BuildStaging'){
 steps{
 echo 'creating infra for staging'
 }
 }
+
 stages{
 stage('DeployStaging'){
 steps{
@@ -19,7 +21,6 @@ stages{
 stage('ValidateStageDeployment'){
 steps{
 echo 'validate deployment on staging'
-}
 }
 }
 }
