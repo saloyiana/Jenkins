@@ -10,7 +10,6 @@ steps{
 echo 'creating infra for staging'
 }
 }
-
 stages{
 stage('DeployStaging'){
 steps{
