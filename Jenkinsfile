@@ -1,8 +1,11 @@
-pipeline{
-agent docker
-options{
-skipStagesAfterUnstable()
-}
+pipeline {
+    agent {
+        docker {
+            image 'alpine'
+        }
+    options{
+        skipStagesAfterUnstable()
+        }
 stages{
 stage('BuildStaging'){
 steps{
